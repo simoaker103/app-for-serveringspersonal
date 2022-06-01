@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row vh-100">
+
+
+
+      <div class="col-12 my-2">
+
+        <!-- Tabs Start -->
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="dryck-tab" data-bs-toggle="tab" data-bs-target="#dryck-tab-pane"
+              type="button" role="tab" aria-controls="dryck-tab-pane" aria-selected="true">Dryck</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pizzor-tab" data-bs-toggle="tab" data-bs-target="#pizzor-tab-pane"
+              type="button" role="tab" aria-controls="pizzor-tab-pane" aria-selected="false">Pizzor</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="saser-tab" data-bs-toggle="tab" data-bs-target="#saser-tab-pane" type="button"
+              role="tab" aria-controls="saser-tab-pane" aria-selected="false">Såser</button>
+          </li>
+        </ul>
+
+        <div class="tab-content d-flex justify-content-center" id="myTabContent">
+          <div class="tab-pane w-100 fade show active" id="dryck-tab-pane" role="tabpanel" aria-labelledby="dryck-tab"
+            tabindex="0">
+            <ol class="list-group list-group-numbered">
+            </ol>
+          </div>
+          <div class="tab-pane w-100 fade" id="pizzor-tab-pane" role="tabpanel" aria-labelledby="pizzor-tab"
+            tabindex="0">
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pizzor Klass 1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ol class="list-group list-group-numbered">
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Pizzor Klass 2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ol class="list-group list-group-numbered">
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Pizzor Klass 3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ol class="list-group list-group-numbered">
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ol class="list-group list-group-numbered">
+            </ol>
+          </div>
+          <div class="tab-pane w-100 fade" id="saser-tab-pane" role="tabpanel" aria-labelledby="saser-tab" tabindex="0">
+            <ol class="list-group list-group-numbered">
+            </ol>
+          </div>
+        </div>
+        <!-- Tabs End -->
+
+      </div>
+
+
+      <div class="col-12 placeholder align-self-end"></div>
+
+    </div>
+
+  </div>
+
+
+  <div class="alert alert-warning d-none col-12" role="alert">
+    Välj ett bord för att visa beställningen!
+  </div>
+
+  <div class="bekrafta-bar bg-dark">
+
+    <div class="dropdown mx-4">
+      <button class="btn btn-secondary" type="button">
+        Bord
+      </button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <div class="btn-group m-2" role="group" ≈="Basic example">
+          <button type="button" class="btn btn-primary">1</button>
+          <button type="button" class="btn btn-primary">2</button>
+          <button type="button" class="btn btn-primary">3</button>
+        </div>
+        <div class="btn-group m-2" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">4</button>
+          <button type="button" class="btn btn-primary">5</button>
+          <button type="button" class="btn btn-primary">6</button>
+        </div>
+        <div class="btn-group m-2" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">7</button>
+          <button type="button" class="btn btn-primary">8</button>
+          <button type="button" class="btn btn-primary">9</button>
+        </div>
+        <div class="btn-group m-2" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">10</button>
+          <button type="button" class="btn btn-primary">11</button>
+          <button type="button" class="btn btn-primary">12</button>
+        </div>
+      </ul>
+    </div>
+
+    <div class="fs-3 text-white">#</div>
+
+
+    <div><button class="bekrafta-btn btn btn-lg btn-primary mx-4 no-modal" data-bs-toggle="modal"
+        data-bs-target="#bekraftaModal" type="button">Visa</button></div>
+
+  </div>
+
+  <div class="modal" id="meddelandeModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bekräftelse</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Beställningen har skickats till köket!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bekraftaModal" tabindex="-1" aria-labelledby="bekraftaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bekraftaModalLabel">Kvitto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <h1 class="text-center bord-nr-kvitto">Bord: </h1>
+
+            <table class="table dryck-tabell">
+              <thead>
+                <tr>
+                  <th style="width: 80%">Dryck</th>
+                  <th style="width: 20%">Pris</th>
+                </tr>
+              </thead>
+              <tbody>
+ 
+              </tbody>
+            </table>
+            
+            <table class="table pizza-tabell">
+              <thead>
+                <tr>
+                  <th style="width: 80%">Pizza</th>
+                  <th style="width: 20%">Pris</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+            
+            <table class="table sas-tabell">
+              <thead>
+                <tr>
+                  <th style="width: 80%">Sås</th>
+                  <th style="width: 20%">Pris</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+            
+          <div class="mb-3">
+            <label for="noteringTextFalt" class="form-label">Notering till köket</label>
+            <textarea class="form-control" id="noteringTextFalt" rows="3"></textarea>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <p class="flex-grow-1">Totalt: </p>
+          <button type="button" class="btn btn-secondary stang-btn" data-bs-dismiss="modal">Stäng</button>
+          <button type="button" class="btn btn-primary skriv-ut-btn" >Skicka</button>
+        </div>
+      </div>
+    </div>
+  </div>ss
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="labb3.js"></script>
+</body>
+
+</html>

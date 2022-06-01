@@ -1,0 +1,33 @@
+.bekrafta-bar {
+    height: 4em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.placeholder {
+    height: 4em;
+    visibility: hidden;
+}
+
+.nr-falt {
+    flex: 0 0 2em;
+    justify-content: center
+}
+
+.btn-group > .btn {
+    flex: 0 0 auto;
+}
+
+.btn-group {
+    justify-content: flex-end;
+    flex: 0 0 7em;
+}
+
+.alert-warning {
+    position: fixed;
+    bottom: 48px;
+}
